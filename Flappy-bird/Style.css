@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: url('https://i.imgur.com/3e5Zz5D.png') repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    overflow: hidden;
+    font-family: 'Press Start 2P', monospace;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bat {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url('https://i.imgur.com/3WjzX9N.png') no-repeat center/contain;
+    image-rendering: pixelated;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.obstacle {
+    position: absolute;
+    width: 48px;
+    background: repeating-linear-gradient( to bottom, #5e2b97, #5e2b97 8px, #3c1c6e 8px, #3c1c6e 16px);
+    border: 2px solid #000;
+    image-rendering: pixelated;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 2px 2px #000;
+}
